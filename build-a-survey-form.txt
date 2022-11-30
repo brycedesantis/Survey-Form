@@ -1,0 +1,139 @@
+** start of undefined **
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="Enter your name" /></label>
+          <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your email" /></label>
+          <label id="number-label" for="number">Age <input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+        </fieldset>
+        <fieldset>
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label><input type="radio" class="inline" name="recommend" value="definitely"/> Definitely</label>
+          <label><input type="radio" class="inline" name="recommend" value="maybe"/> Maybe</label>
+          <label><input type="radio" class="inline" name="recommend" value="not-sure"/> Not sure</label>
+        </fieldset>
+        <fieldset>
+        <p>What is your favorite feature of freeCodeCamp?</p>
+          <select id="favorite">
+            <option disabled selected value>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open source</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <p>What would you like to see improved? </p>
+          <label><input type="checkbox" class="inline" value="front-end"> Front-end projects</label>
+          <label><input type="checkbox" class="inline" value="back-end"> Back-end projects</label>
+          <label><input type="checkbox" class="inline" value="data-viz"> Data visualization</label>
+          <label><input type="checkbox" class="inline" value="challenges"> challenges</label>
+          <label><input type="checkbox" class="inline" value="open-source"> Open source community</label>
+          <label><input type="checkbox" class="inline" value="gitter"> Gitter help rooms</label>
+          <label><input type="checkbox" class="inline" value="videos"> Videos</label>
+          <label><input type="checkbox" class="inline" value="meetups"> City meetups</label>
+          <label><input type="checkbox" class="inline" value="wiki"> Wiki</label>
+          <label><input type="checkbox" class="inline" value="forum"> Forum</label>
+          <label><input type="checkbox" class="inline" value="additional-courses"> Additional courses</label>
+        </fieldset>
+        <fieldset>
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea id-"comments" name="comments" placeholder="Enter your comments here..." rows="6"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: rgb(254,251,234);
+}
+
+#title, #description {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  background: #92A1B3;
+  margin: 2rem;
+  padding: 20px;
+}
+
+p {
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 10px auto;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 88%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #F3DEFF;
+  border-color: white;
+  min-width: 300px;
+}
+
+** end of undefined **
+
